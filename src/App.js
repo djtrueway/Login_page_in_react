@@ -1,26 +1,45 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import TopPage from './component/hearder'
+import BodyPage from './component/Body'
+import Footer from './component/footer'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component{
+  constructor(props){
+    super(props);
+    this.state = {
+      logging : false
+    }
+  }
+
+  render(){
+    if(this.state.logging === true){
+      return (
+        <div>
+        <TopPage/>
+        <h1>you're logging !</h1>
+        <Footer/>
+        </div>
+      )
+    }
+    else{
+      return this.loginRender()
+    }
+  }
+
+  loginRender(){
+    return(
+      <div>
+        <TopPage/>
+        <BodyPage logging={this.logging}/>
+        <Footer/>
+      </div>
+    )
+  }
+ logging = () =>{
+    this.setState({
+      logging : true,
+    })
+  }
 }
-
 export default App;

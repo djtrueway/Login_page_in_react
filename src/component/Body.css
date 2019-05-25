@@ -1,0 +1,27 @@
+body{
+    box-sizing: border-box;
+    background: #0a0a0a;
+  }
+label{
+    color: rgb(206, 206, 206)
+}
+
+.form-control{
+    height: 45px;
+}
+
+.btn-signup{
+    border: 2px solid  #ec3e70;
+    border-radius: 20px;
+    width: 25%;
+    color:white
+}
+.card{
+    border: 2px solid rgb(255, 255, 73);
+    margin: 0px;
+    background-color: #272328;
+}
+.card-botton{
+    height: 170%;
+    margin-top: 3%;
+}
