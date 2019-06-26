@@ -3,6 +3,7 @@ import './App.css';
 import TopPage from './component/hearder'
 import BodyPage from './component/Body'
 import Footer from './component/footer'
+import Music from './component/music'
 
 class App extends React.Component{
   constructor(props){
@@ -17,7 +18,7 @@ class App extends React.Component{
       return (
         <div>
         <TopPage/>
-        <h1>you're logging !</h1>
+          <Music/>
         <Footer/>
         </div>
       )

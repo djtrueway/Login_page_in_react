@@ -1,6 +1,5 @@
 import React from 'react';
 import './Body.css';
-import App from '../App';
 
 
 class BodyPage extends React.Component{

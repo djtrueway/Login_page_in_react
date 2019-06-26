@@ -17,11 +17,11 @@ label{
     color:white
 }
 .card{
-    border: 2px solid rgb(255, 255, 73);
+    border: 2px solid #ffc107;
     margin: 0px;
     background-color: #272328;
 }
 .card-botton{
-    height: 170%;
+    height: 130%;
     margin-top: 3%;
 }
